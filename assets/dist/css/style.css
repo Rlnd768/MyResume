@@ -50,3 +50,13 @@
 
 
 /*===========Dark or clear Mode======*/
+
+
+
+
+/*Profile_pic*/
+#profile_pic {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
