@@ -88,15 +88,14 @@
           <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
               <div class="col-10 col-sm-8 col-lg-6">
-                <img src="img/Solidworks/me.jpg" class="d-block mx-lg-auto img-fluid" alt="My Profile" width="300" height="200" style="border-radius: 20px;">
+                <img src="img/Solidworks/me.jpg" class="d-block mx-lg-auto img-fluid" id="profile_pic" alt="My Profile" width="300" height="200" style="border-radius: 20px;">
               </div>
               <div class="col-lg-6">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Roland BELIOU</h1>
-                <p class="lead">is an engineering student in his first year of Mechanical Engineering and Automated Systems at the National School of Applied Sciences in Fes.<br>
-                  Passionate about aeronautics, aerospace, automotive...
+                <p class="lead" id="introText"></p>
                   <button class="btn btn-primary d-inline-flex align-items-center" type="button" style="background-color: none;">
                     <a href="#about" style="text-decoration: none;color: black;" ><strong>Read more</strong></a>
-                  </button></p>
+                  </button>
               </div>
             </div>
           </div>
@@ -546,5 +545,38 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
+
+    <script>document.addEventListener("DOMContentLoaded", function () {
+  var profilePic = document.getElementById("profile_pic");
+  var introText = document.getElementById("introText");
+  function slideIn(element) {
+    element.style.opacity = 1;
+    element.style.transform = "translateX(0)";
+  }
+var textToDisplay = "is an engineering student in his first year of Mechanical Engineering and Automated Systems at the National School of Applied Sciences in Fes.<br>Passionate about aeronautics, aerospace, automotive...";
+
+var index = 0;
+var speed = 80;
+
+function typeWriter() {
+  document.getElementById("introText").innerHTML += textToDisplay.charAt(index);
+  index++;
+  if (index < textToDisplay.length) {
+    setTimeout(typeWriter, speed);
+  }
+}
+window.onload = function() {
+  typeWriter();
+};
+
+  profilePic.onload = function () {
+    slideIn(profilePic);
+  };
+  if (profilePic.complete) {
+    profilePic.onload();
+  }
+});
+
+</script>
     </body>
 </html>
