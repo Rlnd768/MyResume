@@ -54,9 +54,54 @@
 
 
 
-/*Profile_pic*/
-#profile_pic{
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  }
+.img-fluid:hover{
+  opacity: 0.85;
+  border: 2px solid #144c87;
+  transform: scale(1.2);
+}
+
+
+.col {
+  position: relative; 
+}
+
+.col p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.col:hover p {
+  opacity: 1;
+  font-size: 20px;
+  color: pink;
+  font-weight: bold;
+}
+
+.col:hover img {
+  border-radius: 20px; 
+  border: solid 5px #144c87;
+  transform: scale(1.05);
+  opacity: 0.5;
+}
+
+
+
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.scroll-reveal.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.nav-link:hover{
+  border: solid 1px gray;
+  border-radius: 5px;
+}
