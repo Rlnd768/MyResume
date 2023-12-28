@@ -199,7 +199,7 @@
         position: absolute;
         left: 52%;
         transform: translateX(-50%);
-	font-size: 15px;
+	font-size: 25px;
       }
   }
   @media screen and (max-width: 700px) {
@@ -208,6 +208,6 @@
         position: absolute;
         left: 52%;
         transform: translateX(-50%);
-        font-size: 25px;
+        font-size: 15px;
       }
             }
