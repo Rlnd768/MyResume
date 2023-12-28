@@ -184,14 +184,22 @@
   font-size: 30px;
   color: #333;
   }
-
+ @media screen and (max-width: 300px) {
+    .carousel-indicators button h4{
+        margin-top: -41px;
+        position: absolute;
+        left: 52%;
+        transform: translateX(-50%);
+        opacity:0;
+      }
+            }
   @media screen and (max-width: 480px) {
     .carousel-indicators button h4{
         margin-top: -41px;
         position: absolute;
         left: 52%;
         transform: translateX(-50%);
-         opacity:0;
+	font-size: 15px;
       }
   }
   @media screen and (max-width: 700px) {
@@ -200,15 +208,6 @@
         position: absolute;
         left: 52%;
         transform: translateX(-50%);
-        font-size: 15px;
-      }
-            }
-  @media screen and (max-width: 300px) {
-    .carousel-indicators button h4{
-        margin-top: -41px;
-        position: absolute;
-        left: 52%;
-        transform: translateX(-50%);
-        opacity:0;
+        font-size: 25px;
       }
             }
