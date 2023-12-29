@@ -175,9 +175,6 @@ header{
         font-size: 40px;
         color: #144c87;
         text-align: center;
-      
-  
-        
       }
   
   .carousel-control-next,.carousel-control-prev{
@@ -189,6 +186,7 @@ header{
   font-size: 30px;
   color: #333;
   }
+
 .icon{
 width: 40px;
 height: 40px;
@@ -215,7 +213,7 @@ height: 40px;
 	 .name,.num{
     font-size: 8px;
     }
-            }
+}
   @media screen and (max-width: 480px) {
     .carousel-indicators button h4{
         margin-top: -41px;
@@ -229,7 +227,7 @@ height: 40px;
     height: 30px;
     }
   }
-  }
+
   @media screen and (max-width: 700px) {
     .carousel-indicators button h4{
         margin-top: -41px;
@@ -250,4 +248,4 @@ height: 40px;
       background-color: #144c87;
       height: 60px;
     }
-            }
+}
