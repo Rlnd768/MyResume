@@ -207,6 +207,9 @@ height: 40px;
     width: 14px;
     height: 14px;
     }
+	 .name{
+    font-size: 8px;
+    }
             }
   @media screen and (max-width: 480px) {
     .carousel-indicators button h4{
