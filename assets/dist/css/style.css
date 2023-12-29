@@ -245,7 +245,10 @@ transform: scale(1.01);
     width:20px;
     height:20px;
     }
-    .name,.num{
+    .name{
+ display: none; 
+    } 
+.num{
  display: none; 
     } 
     header{
