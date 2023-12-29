@@ -245,11 +245,8 @@ transform: scale(1.01);
     width:20px;
     height:20px;
     }
-    .name{
- opacity:0;
-    } 
-.num{
- opacity:0;
+    .name,.num{
+ display: none; 
     } 
     header{
       background-color: #144c87;
