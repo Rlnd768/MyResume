@@ -1,3 +1,8 @@
+header{
+  background-color: #144c87;
+  height: 70px;
+}
+
 /*Carouseel reduction de taille(responsive)*/
 @media screen and (max-width: 767px) {
     table, th, td {
@@ -184,6 +189,12 @@
   font-size: 30px;
   color: #333;
   }
+.icon{
+width: 40px;
+height: 40px;
+}
+  .name{
+    font-size: 13px;
  @media screen and (max-width: 300px) {
     .carousel-indicators button h4{
         margin-top: -41px;
@@ -192,6 +203,10 @@
         transform: translateX(-50%);
         opacity:0;
       }
+	 .icon{
+    width: 14px;
+    height: 14px;
+    }
             }
   @media screen and (max-width: 480px) {
     .carousel-indicators button h4{
@@ -201,6 +216,11 @@
         transform: translateX(-50%);
 	opacity:0;
       }
+.icon{
+    width: 30px;
+    height: 30px;
+    }
+  }
   }
   @media screen and (max-width: 700px) {
     .carousel-indicators button h4{
@@ -210,4 +230,16 @@
         transform: translateX(-50%);
         font-size: 15px;
       }
+.icon{
+    width:24px;
+    height:24px;
+    font-size: 20px;
+    }
+    .name{
+    font-size: 13px;
+    }
+    header{
+      background-color: #144c87;
+      height: 60px;
+    }
             }
