@@ -207,7 +207,7 @@ height: 40px;
     width: 14px;
     height: 14px;
     }
-	 .name{
+	 .name,.num{
     font-size: 8px;
     }
             }
@@ -238,7 +238,7 @@ height: 40px;
     height:24px;
     font-size: 20px;
     }
-    .name{
+    .name,.num{
     font-size: 13px;
     }
     header{
