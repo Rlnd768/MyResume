@@ -84,15 +84,12 @@ header{
   font-weight: bold;
 }
 
-.col:hover img {
+#album_item:hover img {
   border-radius: 20px; 
   border: solid 5px #144c87;
   transform: scale(1.05);
   opacity: 0.5;
 }
-
-
-
 
 .scroll-reveal {
   opacity: 0;
