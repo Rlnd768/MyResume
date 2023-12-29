@@ -84,7 +84,7 @@ header{
   font-weight: bold;
 }
 
-#album_item:hover img {
+#album_item:hover{
   border-radius: 20px; 
   border: solid 5px #144c87;
   transform: scale(1.05);
