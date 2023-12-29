@@ -207,7 +207,10 @@ height: 40px;
     width: 14px;
     height: 14px;
     }
-	 .name,.num{
+.name{
+	opacity:0;
+}
+.num{
     font-size: 8px;
     }
 }
