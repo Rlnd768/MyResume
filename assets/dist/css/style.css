@@ -3,16 +3,6 @@ header{
   height: 70px;
 }
 
-/*Carouseel reduction de taille(responsive)*/
-@media screen and (max-width: 767px) {
-    table, th, td {
-        font-size: 11px;
-    }
-
-    th, td {
-        padding: 2px;
-	}
-}
 /*===============Skills==========*/
 .progress-title{
     font-size: 18px;
@@ -234,6 +224,13 @@ transform: scale(1.01);
   }
 
   @media screen and (max-width: 767px) {
+	  table, th, td {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 2px;
+	}
     .carousel-indicators button h4{
         margin-top: -41px;
         position: absolute;
@@ -252,7 +249,6 @@ transform: scale(1.01);
  display: none; 
     } 
     header{
-      background-color: #144c87;
       height: 60px;
     }
 }
